@@ -79,7 +79,6 @@ ISR(TIMER1_COMPA_vect) {
 k++;
 current = analogRead(I_analogPin);
 voltage = analogRead(V_analogPin);
-Vrms = voltage*207;
 
 sum_zero+= current*0.0025; 
 current-=zero; 
